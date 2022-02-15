@@ -1,0 +1,66 @@
+// h1
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+// h2
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+// h3
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+// h4
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+// h5
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+// h6
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Headings styles
+h1 {
+    font-family: 'Shizuru', cursive;
+    background-color: #2C2E43;
+}
+
+h2 {
+    font-family: 'Redressed', cursive;
+    background-color: #595260;
+}
+
+h3 {
+    font-family: 'Syne Tactile', cursive;
+    background-color: #B2B1B9;
+}
+
+h4 {
+    font-family: 'Rubik', sans-serif;
+    background-color: #FFD523;
+}
+
+h5 {
+    font-family: 'Akaya Telivigala', cursive;
+    background-color: #053742;
+}
+
+h6 {
+    font-family: 'Pacifico', cursive;
+    background-color: #39A2DB;
+}
+
+.headings {
+    background: url(/headings/img/bg.jpg);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.header {
+    padding: 10px 40px;
+    border: 1px solid #f3f3f3;
+    border-radius: 30px;
+}

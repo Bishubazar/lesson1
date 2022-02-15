@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #E8F0F2;
+}
+
+.btn__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  max-width: 600px;
+  max-height: 1000px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 25px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: #f3f3f3;
+  color: #f3f3f3;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px 0px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn:hover i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.btn i {
+  font-size: 20px;
+  color: #4276b2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn .bg__shape {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  border-top: 100px solid #4276b2;
+  border-right: 70px solid transparent;
+  z-index: -1;
+}
+
+.btn:nth-child(2) .bg__shape {
+  border-top: 100px solid #dd2a7b;
+}
+
+.btn:nth-child(2) i {
+  color: #dd2a7b;
+}
+
+.btn:nth-child(3) .bg__shape {
+  border-top: 100px solid #008cff;
+}
+
+.btn:nth-child(3) i {
+  color: #008cff;
+}
+
+.btn:nth-child(4) .bg__shape {
+  border-top: 100px solid #ff0000;
+}
+
+.btn:nth-child(4) i {
+  color: #ff0000;
+}
+
+.btn:nth-child(5) .bg__shape {
+  border-top: 100px solid #1db954;
+}
+
+.btn:nth-child(5) i {
+  color: #1db954;
+}
+
+.btn:nth-child(6) .bg__shape {
+  border-top: 100px solid #171a21;
+}
+
+.btn:nth-child(6) i {
+  color: #171a21;
+}
+/*# sourceMappingURL=styles.css.map */

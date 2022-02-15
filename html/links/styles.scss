@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #E8F0F2;
+}
+
+.btn__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    max-width: 600px;
+    max-height: 1000px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    background-color: #f3f3f3;
+    color: #f3f3f3;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.3s ease;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px 0px;
+        transform: scale(1.05);
+        i {
+            transform: scale(1.2);
+        }
+    }
+    i {
+        font-size: 20px;
+        color: #4276b2;
+        transition: 0.3s ease;
+    }
+    .bg__shape {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+        border-top: 100px solid #4276b2;
+        border-right: 70px solid transparent;
+        z-index: -1;
+    }
+    &:nth-child(2) {
+        .bg__shape {
+            border-top: 100px solid #dd2a7b;
+        }
+        i {
+            color: #dd2a7b;
+        }
+    }
+    &:nth-child(3) {
+        .bg__shape {
+            border-top: 100px solid #008cff;
+        }
+        i {
+            color: #008cff;
+        }
+    }
+    &:nth-child(4) {
+        .bg__shape {
+            border-top: 100px solid #ff0000;
+        }
+        i {
+            color: #ff0000;
+        }
+    }
+    &:nth-child(5) {
+        .bg__shape {
+            border-top: 100px solid #1db954;
+        }
+        i {
+            color: #1db954;
+        }
+    }
+    &:nth-child(6) {
+        .bg__shape {
+            border-top: 100px solid #171a21;
+        }
+        i {
+            color: #171a21;
+        }
+    }
+}
